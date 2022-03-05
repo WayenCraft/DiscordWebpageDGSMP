@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +15,6 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         color: #ffffff;
-    }
-
-    a {
-        color: rgb(116, 255, 202);
-
     }
 
     .cover {
@@ -44,6 +34,7 @@
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     iframe {
@@ -51,19 +42,6 @@
         box-shadow: 0px 0px 10px #00000088;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    p {
-        text-align: center;
-    }
-
-    .q1 {
-        text-align: left;
-        margin: 15px;
-    }
-
-    .qsans {
-        border: #ffffffce;
     }
 
     .serverlogo {
@@ -76,13 +54,20 @@
         background-position: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10px;
+    }
+    #server-status{
+        color: rgb(37, 37, 37);
     }
 
     .joinit {
         text-align: center;
+        color: rgb(48, 48, 48);
+        border-radius: 5px;
+        background-color: #fffffff6;
     }
 
-    .mainbg {
+    /* .mainbg {
         background: url("resources/discord-minimalism-render-hd-wallpaper-preview.jpg");
         width: 100vw;
         height: 100vh;
@@ -94,25 +79,56 @@
         left: 0;
         filter: blur(0px) brightness(50%);
         z-index: -1;
-    }
-
-    .q1ans {
-        text-align: left;
-        margin: 15px;
-        font-weight: 800;
-        font-size: 18px;
-    }
-
-    .accordion-body {
-        color: rgb(39, 39, 39);
-    }
-
-    .joinit2 {
-        color: rgb(165, 13, 253);
-    }
+    } */
     .side-header{
         font-size: large;
-        color: #dbdbdb;
+        color: #dddddd;
+    }
+
+    .server-talent {
+        border: 8px solid rgb(101, 21, 175);
+        background-color: #00000077;
+        padding: 20px;
+        width: 75%;
+    }
+
+    .more-plugin{
+        margin-top: 15px;
+        border: 8px solid rgb(67, 21, 175);
+        background-color: #00000077;
+        padding: 20px;
+        width: 75%;
+    }
+
+    .contact {
+        text-align: left;
+        font-size: x-large;
+        margin-top: 35px;
+        color: rgb(37, 37, 37);
+    }
+
+    .helpers {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        color: rgb(37, 37, 37);
+    }
+
+    .helper img {
+        display: block;
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .helper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #no-more{
+        font-size: 1px;
     }
 </style>
 
@@ -126,73 +142,47 @@
         <iframe src="https://discord.com/widget?id=943072218475286558&theme=dark" width="550" height="800"
             allowtransparency="true" frameborder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <p>Our discord server's status!</p> <span class="joinit">Join it
-            <a href="https://discord.gg/678XhaXZfX"><b>here</b></a>
-        </span>
+        <p id="server-status">Our discord server's status!</p> 
+        <a href="https://discord.gg/f9HT7ZQztU"><button class="joinit">Join it here!</button></a>
         <br>
-        <p>Why us?</p>
-        <p><b class="side-header">Play with many other fellow players!</b> Create teams and clans to fight together and capture other places!</p>
-        <p><b class="side-header">More are than the normal minecraft world!</b> There is 534K more blocks now for more space to play, The play area is 3534060 blocks (Till world border from 0  _  0).</p>
-        <p><b class="side-header">Maximum play time!</b> 13 hrs of on time of the server.(We might increase it someday)</p>
-        <p><b class="side-header">No cheating!!</b> The server is strict towards rules and bans all hackers!</p>
-        <p><b class="side-header">Very rewarding!</b> There are tons of rewards for what you do such as - Killing a person with bounty on him/her!</p>
-    </div>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Q1. Is this anarchy? Are there any rules?
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>Welp...</strong> It was first thought to be an anarchy server but then the addition of the
-                    rules, we named it FFA. The rules can be found in the discord server. Join it <a class="joinit2"
-                        href="https://discord.gg/678XhaXZfX">here</a>
-                </div>
+        <div class="server-talent">
+            <div class="talent-list">
+                <h2 class="main-header">Why us?</h2>
+                <p><span class="side-header"><b>Play with many other fellow gamers!</b></span> Create teams and clans to
+                    fight together and capture other places!</p>
+                <p><span class="side-header"><b>More area than the normal minecraft world!</b></span> There is 534.06K more
+                    blocks now for more space to play, The play area is 3534060 blocks (Till world border from 0 y 0).
+                </p>
+                <p><span class="side-header"><b>Maximum play time!</b></span> 13 hrs of on time of the server.(We might
+                    increase it someday)</p>
+                <p><span class="side-header"><b>No cheating!!</b></span> The server is strict towards rules and bans all
+                    hackers!</p>
+                <p><span class="side-header"><b>Very rewarding!</b></span> There are tons of rewards for what you do
+                    such as - Killing a person with bounty on him/her!</p>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Q2.
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                </div>
+        <div class="more-plugin">
+            <h2 class="main-plugin-header">Some teaser plugins!</h2>
+            <p><span class="plugin-list"><b class="side-header">AntiCheat!</b></span> Of cousrse, A server without anticheat will not stay alive... or will it?</p>
+            <p><span class="plugin-list"><b class="side-header">Limited Crafting!</b></span> This one is to save the server, We have disabled redstone and TNT's to keep the server alive and switched on, As the server is based on aternos, we need to not overload the server and get it deleted... </p>
+            <p><span class="plugin-list"><b class="side-header">ClearLagg!</b></span> Like... do I even have to explain? It literraly says it :/</p>
+            <p id="no-more"><span class="plugin-list"></span>it was a teaser don't expect more...</p>
+        </div>
+        <div class="faq">
+            <b id="faq-header">FAQ (Frequently asked questions)</b>
+            <p id="q1"></p>
+        </div>
+        <p class="contact">You can contact for help.</p>
+        <div class="helpers">
+            <div class="helper">
+                <img src="resources/ErrWayen.jpg">
+                WayenCraft#8352 
+            </div>
+            <div class="helper">
+                <img src="resources/Axencroft.png">
+                AxenCroft#8890 
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Q3.
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 </body>
 
