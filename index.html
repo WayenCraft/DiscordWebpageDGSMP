@@ -7,139 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<style>
-    body {
-        margin: 0;
-        overflow-x: none;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        color: #ffffff;
-    }
-
-    .cover {
-        background: url("resources/bghfoaj.jpg");
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        filter: blur(0px) brightness(50%);
-        z-index: -1;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    iframe {
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px #00000088;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .serverlogo {
-        height: 125px;
-        width: 125px;
-        border-radius: 50%;
-        background: url("resources/fire-face-23823103.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }
-    #server-status{
-        color: rgb(37, 37, 37);
-    }
-
-    .joinit {
-        text-align: center;
-        color: rgb(48, 48, 48);
-        border-radius: 5px;
-        background-color: #fffffff6;
-    }
-
-    /* .mainbg {
-        background: url("resources/discord-minimalism-render-hd-wallpaper-preview.jpg");
-        width: 100vw;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        top: 100vh;
-        left: 0;
-        filter: blur(0px) brightness(50%);
-        z-index: -1;
-    } */
-    .side-header{
-        font-size: large;
-        color: #dddddd;
-    }
-
-    .server-talent {
-        border: 8px solid rgb(101, 21, 175);
-        background-color: #00000077;
-        padding: 20px;
-        width: 75%;
-    }
-
-    .more-plugin{
-        margin-top: 15px;
-        border: 8px solid rgb(67, 21, 175);
-        background-color: #00000077;
-        padding: 20px;
-        width: 75%;
-    }
-
-    .contact {
-        text-align: left;
-        font-size: x-large;
-        margin-top: 35px;
-        color: rgb(37, 37, 37);
-    }
-
-    .helpers {
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-        color: rgb(37, 37, 37);
-    }
-
-    .helper img {
-        display: block;
-        height: 125px;
-        width: 125px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-
-    .helper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #no-more{
-        font-size: 1px;
-    }
-</style>
-
 <body>
     <div class="cover"></div>
     <div class="mainbg"></div>
     <div class="container">
-        <div class="serverlogo"></div>
-        <p>Welcome to the FFA Minecraft Server DestructionGodSMP.</p>
-        <p>The server is very new and there are many things to be added and the world is still in progress!</p>
-        <iframe src="https://discord.com/widget?id=943072218475286558&theme=dark" width="550" height="800"
+        <div class="serverlogo animate__animated animate__fadeInDown"></div>
+        <p class="animate__animated animate__fadeIn" id="welcome-header">Welcome to the FFA Minecraft Server DestructionGodSMP.</p>
+        <p class="animate__animated animate__fadeIn">The server is very new and there are many things to be added and the world is still in progress!</p>
+        <iframe id="iframe-animation" class="animate__animated animate__fadeIn" src="https://discord.com/widget?id=943072218475286558&theme=dark" width="550" height="800"
             allowtransparency="true" frameborder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         <p id="server-status">Our discord server's status!</p> 
@@ -148,40 +26,50 @@
         <div class="server-talent">
             <div class="talent-list">
                 <h2 class="main-header">Why us?</h2>
-                <p><span class="side-header"><b>Play with many other fellow gamers!</b></span> Create teams and clans to
-                    fight together and capture other places!</p>
-                <p><span class="side-header"><b>More area than the normal minecraft world!</b></span> There is 534.06K more
-                    blocks now for more space to play, The play area is 3534060 blocks (Till world border from 0 y 0).
-                </p>
-                <p><span class="side-header"><b>Maximum play time!</b></span> 13 hrs of on time of the server.(We might
-                    increase it someday)</p>
-                <p><span class="side-header"><b>No cheating!!</b></span> The server is strict towards rules and bans all
-                    hackers!</p>
-                <p><span class="side-header"><b>Very rewarding!</b></span> There are tons of rewards for what you do
-                    such as - Killing a person with bounty on him/her!</p>
+                <ul>
+                    <li><p><span class="side-header"><b>Play with many other fellow gamers!</b></span> Create teams and clans to
+                        fight together and capture other places!</p></li>
+                    <li><p><span class="side-header"><b>More area than the normal minecraft world!</b></span> There is 534.06K more
+                        blocks now for more space to play, The play area is 3534060 blocks (Till world border from 0 y 0).
+                    </p></li>
+                    <li><p><span class="side-header"><b>Maximum play time!</b></span> 13 hrs of on time of the server.(We might
+                        increase it someday)</p></li>
+                    <li><p><span class="side-header"><b>No cheating!!</b></span> The server is strict towards rules and bans all
+                        hackers!</p></li>
+                    <li><p><span class="side-header"><b>Very rewarding!</b></span> There are tons of rewards for what you do
+                        such as - Killing a person with bounty on him/her!</p></li>
+                </ul>
             </div>
         </div>
         <div class="more-plugin">
             <h2 class="main-plugin-header">Some teaser plugins!</h2>
-            <p><span class="plugin-list"><b class="side-header">AntiCheat!</b></span> Of cousrse, A server without anticheat will not stay alive... or will it?</p>
-            <p><span class="plugin-list"><b class="side-header">Limited Crafting!</b></span> This one is to save the server, We have disabled redstone and TNT's to keep the server alive and switched on, As the server is based on aternos, we need to not overload the server and get it deleted... </p>
-            <p><span class="plugin-list"><b class="side-header">ClearLagg!</b></span> Like... do I even have to explain? It literraly says it :/</p>
+            <ul>
+                <li><p><span class="plugin-list"><b class="side-header">AntiCheat!</b></span> Of cousrse, A server without anticheat will not stay alive... or will it?</p></li>
+                <li><p><span class="plugin-list"><b class="side-header">Limited Crafting!</b></span> This one is to save the server, We have disabled redstone and TNT's to keep the server alive and switched on, As the server is based on aternos, we need to not overload the server and get it deleted... </p></li>
+                <li><p><span class="plugin-list"><b class="side-header">ClearLagg!</b></span> Like... do I even have to explain? It literraly says it :/</p></li>
+                <li><p><span class="plugin-list"><b class="side-header">Lifesteal (fanmade)</b></span> Kill people to get extra hearts and if you get 0 hearts you get BANNED! You won't get unbanned until you get revived (someone creates a heart for you and revives you)</p></li>
+            </ul>
             <p id="no-more"><span class="plugin-list"></span>it was a teaser don't expect more...</p>
         </div>
-        <div class="faq">
-            <b id="faq-header">FAQ (Frequently asked questions)</b>
-            <p id="q1"></p>
-        </div>
+        <img src="resources/animatedheart.gif" id="lifestealheart">
         <p class="contact">You can contact for help.</p>
         <div class="helpers">
             <div class="helper">
                 <img src="resources/ErrWayen.jpg">
-                WayenCraft#8352 
+                <span id="wayencraft">WayenCraft#8352 (owner)</span>
+            </div>
+            <div class="helper">
+                <img src="resources/discord.png">
+                <span id="vrencreft">VrenCreft#8398 (Moderator)</span>
             </div>
             <div class="helper">
                 <img src="resources/Axencroft.png">
-                AxenCroft#8890 
+                <span id="axencroft">AxenCroft#8890 (Server advisor)</span>
             </div>
+        </div>
+        <div class="faq">
+            <b id="faq-header">FAQ (Frequently asked questions)</b>
+            <p id="q1"></p>
         </div>
     </div>
 </body>

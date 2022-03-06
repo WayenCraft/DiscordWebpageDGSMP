@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    overflow-x: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.cover {
+    background: url("resources/bghfoaj.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(0px) brightness(50%);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000088;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serverlogo {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background: url("resources/fire-face-23823103.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#server-status{
+    color: rgb(37, 37, 37);
+}
+
+.joinit {
+    color: rgb(67, 21, 175);
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 250px;
+    line-height: 80px;
+    font-size: 20px;
+    border: solid 1px rgb(67, 21, 175);
+    transition-duration: 0.4s;
+}
+.joinit:hover {
+    background-color: rgb(67, 21, 175);
+    color: #ffffff;
+}
+.joinit:active {
+    background-color: rgb(49, 15, 129);
+}
+
+/* .mainbg {
+    background: url("resources/discord-minimalism-render-hd-wallpaper-preview.jpg");
+    width: 100vw;
+    height: 11100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    filter: blur(0px) brightness(50%);
+    z-index: -1;
+} */
+.side-header{
+    font-size: large;
+    color: #dddddd;
+}
+
+.server-talent {
+    border: 8px solid rgb(101, 21, 175);
+    background-color: #00000077;
+    padding: 20px;
+    width: 75%;
+}
+
+.more-plugin{
+    margin-top: 15px;
+    border: 8px solid rgb(67, 21, 175);
+    background-color: #00000077;
+    padding: 20px;
+    width: 75%;
+}
+
+.contact {
+    text-align: left;
+    font-size: x-large;
+    margin-top: 35px;
+    color: rgb(37, 37, 37);
+}
+
+.helpers {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    color: rgb(37, 37, 37);
+}
+
+.helper img {
+    display: block;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.helper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+}
+#welcome-header{
+    font-size: larger;
+}
+
+#no-more{
+    font-size: 1px;
+}
+.animate__fadeInDown{
+    --animate-duration: 1.5s
+}
+.animate__fadeIn{
+    animation-delay: 1.5s;
+}
+#iframe-animation{
+    animation-delay: 2.5s;
+}
+#lifestealheart{
+    height: 250px;
+    width: 250px;
+}
+#wayencraft{
+    color: #ff00f3;
+}
+#vrencreft{
+    color: #0058ff;
+}
+#axencroft{
+    color: #ff8000;
+}
