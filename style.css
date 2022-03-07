@@ -7,7 +7,7 @@ body {
 }
 
 .cover {
-    background: url("resources/bghfoaj.jpg");
+    background: url("resources/cbg2.png");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -136,13 +136,21 @@ iframe {
     font-size: 1px;
 }
 .animate__fadeInDown{
-    --animate-duration: 1.5s
+    --animate-duration: 1s
 }
 .animate__fadeIn{
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
+.animate__bounceInLeft{
+    animation: animation .5s forwards;
+    animation-duration: 1s;
+}
+
 #iframe-animation{
-    animation-delay: 2.5s;
+    animation-delay: 1.7s;
+}
+#talent-animation{
+    animation-delay: 0.5s;
 }
 #lifestealheart{
     height: 250px;
