@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow-x: none;
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #ffffff;
@@ -34,8 +34,8 @@ iframe {
 }
 
 .serverlogo {
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background: url("resources/fire-face-23823103.jpg");
     background-repeat: no-repeat;
@@ -52,12 +52,14 @@ iframe {
 .joinit {
     color: rgb(67, 21, 175);
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #ffffff77;
     width: 250px;
     line-height: 80px;
     font-size: 20px;
-    border: solid 1px rgb(67, 21, 175);
+    border: solid 2px rgb(82 93 235);
     transition-duration: 0.4s;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 .joinit:hover {
     background-color: rgb(67, 21, 175);
@@ -81,23 +83,25 @@ iframe {
     z-index: -1;
 } */
 .side-header{
-    font-size: large;
-    color: #dddddd;
+    font-size: 20px;
+    color: #9e9e9e;
 }
 
 .server-talent {
-    border: 8px solid rgb(101, 21, 175);
-    background-color: #00000077;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
     padding: 20px;
     width: 75%;
 }
 
 .more-plugin{
-    margin-top: 15px;
+    color: rgb(37, 37, 37);
+    /* margin-top: 15px;
     border: 8px solid rgb(67, 21, 175);
-    background-color: #00000077;
+    background-color: #00000077; */
     padding: 20px;
     width: 75%;
+    font-size: 18px;
 }
 
 .contact {
@@ -129,11 +133,37 @@ iframe {
     width: 280px;
 }
 #welcome-header{
-    font-size: larger;
+    font-size: 50px;
+}
+#welcome{
+    font-size: 17px;
 }
 
 #no-more{
     font-size: 1px;
+}
+.faq{
+    color: rgb(37, 37, 37);
+    margin: 15px;
+    font-size: 15px;
+    width: 70%;
+}
+.faq-header-container{
+    text-align: center;
+}
+.queries{
+    color: #929292;
+}
+#faq-header{
+    color: rgb(37, 37, 37);
+}
+.questions{
+    color: #9e9e9e;
+    font-size: 20px;
+}
+.answers{
+    color: rgb(37, 37, 37);
+    font-size: 20px;
 }
 .animate__fadeInDown{
     --animate-duration: 1s
@@ -144,6 +174,11 @@ iframe {
 .animate__bounceInLeft{
     animation: animation .5s forwards;
     animation-duration: 1s;
+}
+.animate__bounceInRight{
+    animation: animation .5s forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
 
 #iframe-animation{
