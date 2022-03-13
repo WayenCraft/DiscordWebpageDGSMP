@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px){
+    #welcome-header{
+        font-size: 35px;
+    }
+    iframe{
+        width: 100vw;
+    }
+    .server-talent-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .server-talent{
+        width: 95%;
+    }
+    .more-plugin-container{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .more-plugin{
+        width:95%;
+    }
+    #welcome{
+        font-size: 18px;
+    }
+    .helpers{
+        flex-direction: column;
+    }
+    .helper{
+        margin-top: 10px;
+    }
+    .faq{
+        width: 95%;
+    }
+}

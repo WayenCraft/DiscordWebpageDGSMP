@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<head> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>new WOW().init();</script>
 </head>
+
 <body>
     <div class="cover"></div>
     <div class="mainbg"></div>
@@ -20,52 +22,98 @@
         <h1 class="animate__animated animate__fadeIn" id="welcome-header">DestructionGodSMP Minecraft</h1>
         <p class="animate__animated animate__fadeIn" id="welcome">Welcome to the FFA Minecraft server</p>
         <a href="https://discord.gg/f9HT7ZQztU"><button class="joinit">Join it here!</button></a>
-        <iframe id="iframe-animation" class="animate__animated animate__fadeIn" src="https://discord.com/widget?id=943072218475286558&theme=dark" width="500" height="600"
+        <iframe class="animate__animated animate__fadeIn"
+            src="https://discord.com/widget?id=943072218475286558&theme=dark"
             allowtransparency="true" frameborder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <br>
-        <div id="talent-animation"class="server-talent animate__animated wow bounceInLeft animate__bounceInLeft">
-            <div class="talent-list">
-                <h2 class="main-header">Why us?</h2>
+        <div class="server-talent-container">
+            <img height="300px" src="resources/javamsa-mb-newimproved.png">
+                <div class="server-talent animate__animated wow bounceInLeft animate__bounceInLeft">
+                    <h2 class="main-header">Why us?</h2>
+                    <ul>
+                        <li>
+                            <p><span class="side-header"><b>Play with many other fellow gamers!</b></span> Create teams
+                                and
+                                clans to
+                                fight together and capture other places!</p>
+                        </li>
+                        <li>
+                            <p><span class="side-header"><b>More area than the normal minecraft world!</b></span> There
+                                is
+                                534.06K more
+                                blocks now for more space to play, The play area is 3534060 blocks (Till world border
+                                from 0
+                                y 0).
+                            </p>
+                        </li>
+                        <li>
+                            <p><span class="side-header"><b>Maximum play time!</b></span> 13 hrs of on time of the
+                                server.(We might
+                                increase it someday)</p>
+                        </li>
+                        <li>
+                            <p><span class="side-header"><b>No cheating!!</b></span> The server is strict towards rules
+                                and
+                                bans all
+                                hackers!</p>
+                        </li>
+                        <li>
+                            <p><span class="side-header"><b>Very rewarding!</b></span> There are tons of rewards for
+                                what
+                                you do
+                                such as - Killing a person with bounty on him/her!</p>
+                        </li>
+                    </ul>
+                </div>            
+        </div>
+        <div class="more-plugin-container">
+            <div class="more-plugin animate__animated wow bounceInRight animate__bounceInRight">
+                <h2 class="main-plugin-header">Some teaser plugins!</h2>
                 <ul>
-                    <li><p><span class="side-header"><b>Play with many other fellow gamers!</b></span> Create teams and clans to
-                        fight together and capture other places!</p></li>
-                    <li><p><span class="side-header"><b>More area than the normal minecraft world!</b></span> There is 534.06K more
-                        blocks now for more space to play, The play area is 3534060 blocks (Till world border from 0 y 0).
-                    </p></li>
-                    <li><p><span class="side-header"><b>Maximum play time!</b></span> 13 hrs of on time of the server.(We might
-                        increase it someday)</p></li>
-                    <li><p><span class="side-header"><b>No cheating!!</b></span> The server is strict towards rules and bans all
-                        hackers!</p></li>
-                    <li><p><span class="side-header"><b>Very rewarding!</b></span> There are tons of rewards for what you do
-                        such as - Killing a person with bounty on him/her!</p></li>
+                    <li>
+                        <p><span class="plugin-list"><b class="side-header">AntiCheat!</b></span> Of cousrse, A server
+                            without anticheat will not stay alive... or will it?</p>
+                    </li>
+                    <li>
+                        <p><span class="plugin-list"><b class="side-header">Limited Crafting!</b></span> This one is to
+                            save
+                            the server, We have disabled redstone and TNT's to keep the server alive and switched on, As
+                            the
+                            server is based on aternos, we need to not overload the server and get it deleted... </p>
+                    </li>
+                    <li>
+                        <p><span class="plugin-list"><b class="side-header">ClearLagg!</b></span> Like... do I even have
+                            to
+                            explain? It literally says it :/</p>
+                    </li>
+                    <li>
+                        <p><span class="plugin-list"><b class="side-header">Lifesteal (fanmade)</b></span> Kill people
+                            to
+                            get extra hearts and if you get 0 hearts you get BANNED! You won't get unbanned until you
+                            get
+                            revived (someone creates a heart for you and revives you)</p>
+                    </li>
                 </ul>
+                <a href="https://www.youtube.com/watch?v=O91DT1pR1ew" id="no-more">Never gonna give you up...</a>
             </div>
+            <img src="resources/settingsicon.png">
         </div>
-        <div class="more-plugin animate__animated wow bounceInRight animate__bounceInRight">
-            <h2 class="main-plugin-header">Some teaser plugins!</h2>
-            <ul>
-                <li><p><span class="plugin-list"><b class="side-header">AntiCheat!</b></span> Of cousrse, A server without anticheat will not stay alive... or will it?</p></li>
-                <li><p><span class="plugin-list"><b class="side-header">Limited Crafting!</b></span> This one is to save the server, We have disabled redstone and TNT's to keep the server alive and switched on, As the server is based on aternos, we need to not overload the server and get it deleted... </p></li>
-                <li><p><span class="plugin-list"><b class="side-header">ClearLagg!</b></span> Like... do I even have to explain? It literraly says it :/</p></li>
-                <li><p><span class="plugin-list"><b class="side-header">Lifesteal (fanmade)</b></span> Kill people to get extra hearts and if you get 0 hearts you get BANNED! You won't get unbanned until you get revived (someone creates a heart for you and revives you)</p></li>
-            </ul>
-            <p id="no-more"><span class="plugin-list"></span>it was a teaser don't expect more...</p>
-        </div>
-        <img src="resources/animatedheart.gif" id="lifestealheart">
-        <h2 class="contact">You can contact for help.</h2>
-        <div class="helpers animate__animated wow bounceInUp animate__bounceInUp">
-            <div class="helper">
-                <img src="resources/ErrWayen.jpg">
-                <span id="wayencraft">WayenCraft#8352 (owner)</span>
-            </div>
-            <div class="helper">
-                <img src="resources/discord.png">
-                <span id="vrencreft">VrenCreft#8398 (Moderator)</span>
-            </div>
-            <div class="helper">
-                <img src="resources/Axencroft.png">
-                <span id="axencroft">AxenCroft#8890 (Server advisor)</span>
+        <div class="contacts">
+            <img src="resources/animatedheart.gif" id="lifestealheart">
+            <h2 class="contact">You can contact for help.</h2>
+            <div class="helpers">
+                <div class="helper">
+                    <img src="resources/ErrWayen.jpg">
+                    <span id="wayencraft">WayenCraft#8352 (owner)</span>
+                </div>
+                <div class="helper">
+                    <img src="resources/discord.png">
+                    <span id="vrencreft">VrenCreft#8398 (Moderator)</span>
+                </div>
+                <div class="helper">
+                    <img src="resources/Axencroft.png">
+                    <span id="axencroft">AxenCroft#8890 (Server advisor)</span>
+                </div>
             </div>
         </div>
         <br>
@@ -75,25 +123,43 @@
             </div>
             <div class="queries">
                 <div class="faq-question-1">
-                    <span class="questions"><p>// Q1. How old is the server? And how many players are there?</p></span>
-                    <span class="answers"><p>The server is very new, the world is being built. There are not many players right now, but you may check out more stuff about the server on our discord.</p></span>
+                    <span class="questions">
+                        <p>// Q1. How old is the server? And how many players are there?</p>
+                    </span>
+                    <span class="answers">
+                        <p>The server is very new, the world is being built. There are not many players right now, but
+                            you may check out more stuff about the server on our discord.</p>
+                    </span>
                 </div>
                 <div class="faq-question-2">
-                    <span class="questions"><p>// Q2. Are there only this many rules? And why is TNT and redstone banned?</p></span>
-                    <span class="answers"><p>As we said, The server is based on aternos each server is given 2.5 Gigs of ram, so we don't want to overload our server and ruin it as aternos says that they might DELETE the servers which are too heavy. And also we don't want to lose all our progress and hardwork.</p></span>
+                    <span class="questions">
+                        <p>// Q2. Are there only this many rules? And why is TNT and redstone banned?</p>
+                    </span>
+                    <span class="answers">
+                        <p>As we said, The server is based on aternos each server is given 2.5 Gigs of ram, so we don't
+                            want to overload our server and ruin it as aternos says that they might DELETE the servers
+                            which are too heavy. And also we don't want to lose all our progress and hardwork.</p>
+                    </span>
                 </div>
                 <div class="faq-question-3">
-                    <span class="questions"><p>// Q3. What are the rewards?</p></span>
-                    <span class="answers"><p>The reward sheet can be found on our discord server.</p></span>
+                    <span class="questions">
+                        <p>// Q3. What are the rewards?</p>
+                    </span>
+                    <span class="answers">
+                        <p>The reward sheet can be found on our discord server.</p>
+                    </span>
                 </div>
             </div>
             <i>For more query, please let us know in the discord server.</i>
+        </div>
+        <div class="footer">
+            All rights reserved. Copyright &copy; DestructionGodSMP 2022.
         </div>
     </div>
 </body>
 
 </html>
- <!-- R  G  B  -->
+<!-- R  G  B  -->
 <!-- 182 29 79 -->
 <!-- 12 161 255 -->
 <!-- 62 137 4 -->
