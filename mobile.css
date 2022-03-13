@@ -31,4 +31,7 @@
     .faq{
         width: 95%;
     }
+    body{
+        overflow-x: hidden;
+    }
 }
