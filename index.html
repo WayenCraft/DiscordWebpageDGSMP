@@ -2,16 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJHDG3BKRF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PJHDG3BKRF');
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +11,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>new WOW().init();</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJHDG3BKRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PJHDG3BKRF');
+    </script>
 </head>
-
 <body>
     <div class="cover"></div>
     <div class="mainbg"></div>
     <div class="container">
         <div class="serverlogo animate__animated animate__fadeInDown"></div>
-        <h1 class="animate__animated animate__fadeIn" id="welcome-header">DestructionGodSMP Minecraft</h1>
+        <h1 class="animate__animated animate__fadeIn" id="welcome-header">Destruction<wbr>GodSMP Minecraft</h1>
         <p class="animate__animated animate__fadeIn" id="welcome">Welcome to the FFA Minecraft server</p>
-        <a href="https://discord.gg/f9HT7ZQztU"><button class="joinit">Join it here!</button></a>
+        <div class="buttons">
+            <div class="aternos-url-container">
+                <div class="aternos-url">
+                    <span id="url" class="url">DesGodSMP.aternos.me</span>
+                    <span class="material-icons btncopy" data-clipboard-text="DesGodSMP.aternos.me" onclick="$('.copied').css('visibility','visible')">content_copy</span>
+                </div>
+                <span class="copied">URL copied!</span>
+            </div>
+            <a href="https://discord.gg/f9HT7ZQztU"><button class="joinit">Join on Discord</button></a>
+        </div>
         <iframe class="animate__animated animate__fadeIn"
             src="https://discord.com/widget?id=943072218475286558&theme=dark" allowtransparency="true" frameborder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -164,12 +173,7 @@
             All rights reserved. Copyright &copy; DestructionGodSMP 2022.
         </div>
     </div>
-</body>
 
+    <script>new WOW().init();new ClipboardJS('.btncopy');</script>
+</body>
 </html>
-<!-- R  G  B  -->
-<!-- 182 29 79 -->
-<!-- 12 161 255 -->
-<!-- 62 137 4 -->
-<!-- 245 231 247 -->
-<!-- 82 93 235 -->

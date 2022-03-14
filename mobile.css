@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px){
     #welcome-header{
         font-size: 35px;
+        max-width: 95%;
     }
     iframe{
         width: 100vw;
@@ -33,5 +34,12 @@
     }
     .container{
         overflow-x: hidden;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons .aternos-url {
+        margin-bottom: 15px;
     }
 }
