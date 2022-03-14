@@ -267,7 +267,7 @@ iframe {
 }
 .copied {
     visibility: hidden;
-    color: red;
+    color: rgb(255, 255, 255);
 }
 .aternos-url-container {
     display: flex;
